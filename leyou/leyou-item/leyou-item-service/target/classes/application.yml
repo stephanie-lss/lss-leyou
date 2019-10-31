@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/hm49?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/hm?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 1008
     hikari:
