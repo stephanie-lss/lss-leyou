@@ -4,19 +4,18 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.leyou.common.pojo.PageResult;
 import com.leyou.item.bo.SpuBo;
-import com.leyou.item.mapper.BrandMapper;
-import com.leyou.item.mapper.SpuDetailMapper;
-import com.leyou.item.mapper.SpuMapper;
-import com.leyou.item.pojo.Brand;
-import com.leyou.item.pojo.Spu;
+import com.leyou.item.mapper.*;
+import com.leyou.item.pojo.*;
 import com.leyou.item.service.IGoodsService;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -38,6 +37,102 @@ public class GoodsService implements IGoodsService {
 
     @Autowired
     private CategoryService categoryService;
+
+    @Autowired
+    private SkuMapper skuMapper;
+
+    @Transactional
+    @Override
+    public void saveGoods(SpuBo spuBo) {
+        //先新增spu
+        spuBo.setId(null);
+        spuBo.setCreateTime(new Date());
+        spuBo.setLastUpdateTime(spuBo.getCreateTime());
+        spuBo.setSaleable(true);
+        spuBo.setValid(true);
+        this.spuMapper.insertSelective(spuBo);
+        //再新增spuDetail
+        SpuDetail spuDetail = spuBo.getSpuDetail();
+        spuDetail.setSpuId(spuBo.getId());
+        this.spuDetailMapper.insertSelective(spuDetail);
+
+        saveSkuAndStock(spuBo);
+
+    }
+
+    private void saveSkuAndStock(SpuBo spuBo) {
+        List<Sku> skus = spuBo.getSkus();
+        for (Sku sku : skus) {
+            //新增sku
+            sku.setId(null);
+            sku.setSpuId(spuBo.getId());
+            sku.setCreateTime(new Date());
+            sku.setLastUpdateTime(sku.getCreateTime());
+            this.skuMapper.insertSelective(sku);
+            //新增stock
+            Stock stock = new Stock();
+            stock.setSkuId(sku.getId());
+            stock.setStock(sku.getStock());
+            this.stockMapper.insertSelective(stock);
+        }
+    }
+
+    @Transactional
+    @Override
+    public void updateGoods(SpuBo spuBo) {
+        //0.根据spuId查询要删除的sku
+        Sku record = new Sku();
+        record.setSpuId(spuBo.getId());
+//        用这个会有什么区别吗？试了好像没什么区别，但是里面好像是少了些东西
+//        System.out.println("*********直接查询：**********" + spuBo.getSkus());
+        List<Sku> skus = this.skuMapper.select(record);
+//        System.out.println("**********查ID：*******" + skus);
+        skus.forEach(sku -> {
+            //1.删除stock
+            this.stockMapper.deleteByPrimaryKey(sku.getId());
+        });
+
+        //2.删除sku
+        Sku sku = new Sku();
+        sku.setSpuId(spuBo.getId());
+        this.skuMapper.delete(sku);
+
+        //3.新增sku
+        //4.新增stock
+        this.saveSkuAndStock(spuBo);
+
+        //5.更新spu和spuDetail
+        spuBo.setCreateTime(null);
+        spuBo.setLastUpdateTime(new Date());
+        spuBo.setValid(null);
+        spuBo.setSaleable(null);
+        this.spuMapper.updateByPrimaryKeySelective(spuBo);
+        this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
+    }
+
+    @Override
+    public SpuDetail querySpuDetailBySpuId(Long spuId) {
+        return this.spuDetailMapper.selectByPrimaryKey(spuId);
+    }
+
+    @Override
+    public List<Sku> querySkusBySpuId(Long spuId) {
+        Sku record = new Sku();
+        record.setSpuId(spuId);
+        List<Sku> skus = this.skuMapper.select(record);
+        /*for (Sku sku : skus) {
+            Stock stock = this.stockMapper.selectByPrimaryKey(sku.getId());
+            sku.setStock(stock.getStock());
+        }*/
+        skus.forEach(sku -> {
+            Stock stock = this.stockMapper.selectByPrimaryKey(sku.getId());
+            sku.setStock(stock.getStock());
+        });
+        return skus;
+    }
+
+    @Autowired
+    private StockMapper stockMapper;
 
     @Override
     public PageResult<SpuBo> querySpuByPage(String key, Boolean saleable, Integer page, Integer rows) {

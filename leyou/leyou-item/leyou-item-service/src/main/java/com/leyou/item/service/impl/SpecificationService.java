@@ -5,6 +5,7 @@ import com.leyou.item.mapper.SpecParamMapper;
 import com.leyou.item.pojo.SpecGroup;
 import com.leyou.item.pojo.SpecParam;
 import com.leyou.item.service.ISpecificationService;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,9 +36,14 @@ public class SpecificationService implements ISpecificationService {
      * @return
      */
     @Override
-    public List<SpecParam> queryParams(Long gid) {
+    public List<SpecParam> queryParams(Long gid, Long cid, Boolean generic, Boolean searching) {
         SpecParam record = new SpecParam();
         record.setGroupId(gid);
+        record.setCid(cid);
+        record.setGeneric(generic);
+        record.setSearching(searching);
         return this.paramMapper.select(record);
     }
+
+
 }

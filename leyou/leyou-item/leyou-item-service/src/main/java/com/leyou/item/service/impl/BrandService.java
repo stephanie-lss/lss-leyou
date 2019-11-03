@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.leyou.common.pojo.PageResult;
 import com.leyou.item.mapper.BrandMapper;
+import com.leyou.item.mapper.CategoryMapper;
 import com.leyou.item.pojo.Brand;
 import com.leyou.item.service.IBrandService;
 import org.apache.commons.lang.StringUtils;
@@ -23,6 +24,9 @@ public class BrandService implements IBrandService {
 
     @Autowired
     private BrandMapper brandMapper;
+
+    @Autowired
+    private CategoryMapper categoryMapper;
 
     @Override
     public PageResult<Brand> queryBrandsByPage(String key, Integer page, Integer rows, String sortBy, Boolean desc) {
@@ -81,6 +85,18 @@ public class BrandService implements IBrandService {
         this.brandMapper.deleteByPrimaryKey(bid);
         //维护中间表
         deleteByBrandIdInCategoryBrand(bid);
+    }
+
+    /**
+     * 根据分类id查询品牌列表
+     * @param cid
+     * @return
+     */
+    @Override
+    public List<Brand> queryBrandsByCid(Long cid) {
+        //根据cid查询bid
+        List<Brand> brands = this.brandMapper.selectBrandsByCid(cid);
+        return brands;
     }
 
 }
