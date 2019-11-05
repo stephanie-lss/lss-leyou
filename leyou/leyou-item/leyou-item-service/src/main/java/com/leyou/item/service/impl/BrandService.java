@@ -99,4 +99,10 @@ public class BrandService implements IBrandService {
         return brands;
     }
 
+    @Override
+    public Brand queryBrandById(Long id) {
+        return this.brandMapper.selectByPrimaryKey(id);
+    }
+
+
 }

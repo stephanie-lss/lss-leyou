@@ -28,26 +28,27 @@ public class CategoryController {
 
     /**
      * 根据父节点的id查询子节点
+     *
      * @param pid
      * @return
      */
     @GetMapping("list")
     public ResponseEntity<List<Category>> queryCategoriesByPid(@RequestParam(value = "pid", defaultValue = "0") Long pid) {
 //        try {
-            if (pid == null || pid < 0) {
+        if (pid == null || pid < 0) {
 //                400
 //                return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 //                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-                return ResponseEntity.badRequest().build();
-            }
-            List<Category> categories = categoryService.queryCategoriesByPid(pid);
-            if (CollectionUtils.isEmpty(categories)) {
+            return ResponseEntity.badRequest().build();
+        }
+        List<Category> categories = categoryService.queryCategoriesByPid(pid);
+        if (CollectionUtils.isEmpty(categories)) {
 //                404
 //                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-                return ResponseEntity.notFound().build();
-            }
-            //200查询成功
-            return ResponseEntity.ok(categories);
+            return ResponseEntity.notFound().build();
+        }
+        //200查询成功
+        return ResponseEntity.ok(categories);
         /* }catch (Exception e) {
             e.printStackTrace();
         }
@@ -56,11 +57,23 @@ public class CategoryController {
     }
 
     @GetMapping("bid/{bid}")
-    public ResponseEntity<List<Category>> queryByBrandId(@PathVariable("bid")Long bid){
+    public ResponseEntity<List<Category>> queryByBrandId(@PathVariable("bid") Long bid) {
         List<Category> brands = this.categoryService.queryByBrandId(bid);
-        if (CollectionUtils.isEmpty(brands)){
+        if (CollectionUtils.isEmpty(brands)) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         return ResponseEntity.ok(brands);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids") List<Long> ids) {
+        List<String> names = this.categoryService.queryNamesByIds(ids);
+        if (CollectionUtils.isEmpty(names)) {
+//                404
+//                return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+            return ResponseEntity.notFound().build();
+        }
+        //200查询成功
+        return ResponseEntity.ok(names);
     }
 }
