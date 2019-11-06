@@ -1,4 +1,4 @@
-package com.leyou.service;
+package com.leyou.search.service;
 
 import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;

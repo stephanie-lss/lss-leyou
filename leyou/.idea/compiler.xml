@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leyou-item-interface" />
-        <module name="leyou-search" />
         <module name="leyou-gateway" />
-        <module name="leyou-upload" />
-        <module name="leyou-registry" />
         <module name="leyou-item-service" />
         <module name="leyou-common" />
+        <module name="leyou-registry" />
+        <module name="leyou-search" />
+        <module name="leyou-upload" />
       </profile>
     </annotationProcessing>
   </component>

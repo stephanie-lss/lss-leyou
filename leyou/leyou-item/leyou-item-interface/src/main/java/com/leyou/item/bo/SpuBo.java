@@ -4,6 +4,7 @@ import com.leyou.item.pojo.Sku;
 import com.leyou.item.pojo.Spu;
 import com.leyou.item.pojo.SpuDetail;
 
+import javax.persistence.Transient;
 import java.util.List;
 
 /**
@@ -12,12 +13,16 @@ import java.util.List;
  */
 public class SpuBo extends Spu {
 
+    @Transient
     private String cname;
 
+    @Transient
     private String bname;
 
+    @Transient
     private SpuDetail spuDetail;
 
+    @Transient
     private List<Sku> skus;
 
     public List<Sku> getSkus() {

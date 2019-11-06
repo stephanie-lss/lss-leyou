@@ -1,17 +1,18 @@
-package com.leyou.service.impl;
+package com.leyou.search.service.impl;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.leyou.client.BrandClient;
-import com.leyou.client.CategoryClient;
-import com.leyou.client.GoodsClient;
-import com.leyou.client.SpecificationClient;
+import com.leyou.search.client.BrandClient;
+import com.leyou.search.client.CategoryClient;
+import com.leyou.search.client.GoodsClient;
+import com.leyou.search.client.SpecificationClient;
 import com.leyou.item.pojo.*;
 import com.leyou.search.pojo.Goods;
-import com.leyou.service.ISearchService;
+import com.leyou.search.service.ISearchService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.*;
@@ -20,6 +21,7 @@ import java.util.*;
  * @author LiSheng
  * @date 2019/11/5 13:21
  */
+@Service
 public class SearchService implements ISearchService {
 
     @Autowired
