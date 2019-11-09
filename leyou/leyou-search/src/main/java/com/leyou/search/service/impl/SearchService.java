@@ -14,6 +14,7 @@ import com.leyou.search.repository.GoodsRepository;
 import com.leyou.search.service.ISearchService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.math.NumberUtils;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.Operator;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
@@ -133,7 +134,8 @@ public class SearchService implements ISearchService {
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         //添加查询条件
         //对key进行全文检索查询
-        QueryBuilder basicQuery = QueryBuilders.matchQuery("all", key).operator(Operator.AND);
+//        QueryBuilder basicQuery = QueryBuilders.matchQuery("all", key).operator(Operator.AND);
+        BoolQueryBuilder basicQuery = buildBoolQueryBuilder(request);
         queryBuilder.withQuery(basicQuery);
         //分页从0开始
         queryBuilder.withPageable(PageRequest.of(request.getPage() - 1, request.getSize()));
@@ -158,6 +160,36 @@ public class SearchService implements ISearchService {
             specAggResult = getParamAggResult((Long) categoryAggResult.get(0).get("id"), basicQuery);
         }
         return new SearchResult(goodsPage.getTotalElements(), goodsPage.getTotalPages(), goodsPage.getContent(), categoryAggResult, brandAggResult, specAggResult);
+    }
+
+    /**
+     * 构建布尔查询
+     *
+     * @param request
+     * @return
+     */
+    private BoolQueryBuilder buildBoolQueryBuilder(SearchRequest request) {
+        BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
+        //给布尔查询添加基本查询条件
+        boolQueryBuilder.must(QueryBuilders.matchQuery("all", request.getKey()).operator(Operator.AND));
+        //添加过滤条件
+        if (CollectionUtils.isEmpty(request.getFilter())){
+            return boolQueryBuilder;
+        }
+        //获取用户选择的过滤信息
+        Map<String, Object> filter = request.getFilter();
+        for (Map.Entry<String, Object> entry : filter.entrySet()) {
+            String key = entry.getKey();
+            if (StringUtils.equals("品牌", key)) {
+                key = "brandId";
+            } else if (StringUtils.equals("分类", key)) {
+                key = "cid3";
+            } else {
+                key = "specs." + key + ".keyword";
+            }
+            boolQueryBuilder.filter(QueryBuilders.termQuery(key, entry.getValue()));
+        }
+        return boolQueryBuilder;
     }
 
     /**
