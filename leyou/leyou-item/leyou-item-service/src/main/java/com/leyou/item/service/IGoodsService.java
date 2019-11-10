@@ -3,6 +3,7 @@ package com.leyou.item.service;
 import com.leyou.common.pojo.PageResult;
 import com.leyou.item.bo.SpuBo;
 import com.leyou.item.pojo.Sku;
+import com.leyou.item.pojo.Spu;
 import com.leyou.item.pojo.SpuDetail;
 
 import java.util.List;
@@ -39,4 +40,6 @@ public interface IGoodsService {
      * @param spuBo
      */
     void updateGoods(SpuBo spuBo);
+
+    Spu querySpuById(Long id);
 }

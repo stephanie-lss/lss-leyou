@@ -27,13 +27,28 @@ public class SpecificationController {
 
     /**
      * 根据分类id查询参数组
+     *
      * @param cid
      * @return
      */
     @GetMapping("groups/{cid}")
-    public ResponseEntity<List<SpecGroup>> queryGroupsByCid(@PathVariable("cid")Long cid){
+    public ResponseEntity<List<SpecGroup>> queryGroupsByCid(@PathVariable("cid") Long cid) {
         List<SpecGroup> groups = this.specificationService.queryGroupsByCid(cid);
-        if (CollectionUtils.isEmpty(groups)){
+        if (CollectionUtils.isEmpty(groups)) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(groups);
+    }
+
+    /**
+     * 根据分类id查询组以及组中的参数
+     * @param cid
+     * @return
+     */
+    @GetMapping("group/param/{cid}")
+    public ResponseEntity<List<SpecGroup>> queryGroupsWithParam(@PathVariable("cid") Long cid) {
+        List<SpecGroup> groups = this.specificationService.queryGroupsWithParam(cid);
+        if (CollectionUtils.isEmpty(groups)) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(groups);
@@ -41,17 +56,18 @@ public class SpecificationController {
 
     /**
      * 根据条件查询规格参数
+     *
      * @param gid
      * @return
      */
     @GetMapping("params")
     public ResponseEntity<List<SpecParam>> queryParams(
-            @RequestParam(value = "gid",required = false)Long gid,
-            @RequestParam(value = "cid",required = false)Long cid,
-            @RequestParam(value = "generic",required = false)Boolean generic,
-            @RequestParam(value = "searching",required = false)Boolean searching){
-        List<SpecParam> params = this.specificationService.queryParams(gid,cid,generic,searching);
-        if (CollectionUtils.isEmpty(params)){
+            @RequestParam(value = "gid", required = false) Long gid,
+            @RequestParam(value = "cid", required = false) Long cid,
+            @RequestParam(value = "generic", required = false) Boolean generic,
+            @RequestParam(value = "searching", required = false) Boolean searching) {
+        List<SpecParam> params = this.specificationService.queryParams(gid, cid, generic, searching);
+        if (CollectionUtils.isEmpty(params)) {
             return ResponseEntity.notFound().build();
         }
         return ResponseEntity.ok(params);

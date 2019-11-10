@@ -24,4 +24,6 @@ public interface ISpecificationService {
      * @return
      */
     List<SpecParam> queryParams(Long gid,Long cid,Boolean generic,Boolean searching);
+
+    List<SpecGroup> queryGroupsWithParam(Long cid);
 }
