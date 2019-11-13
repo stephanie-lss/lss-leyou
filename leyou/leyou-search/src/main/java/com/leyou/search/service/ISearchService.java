@@ -15,4 +15,8 @@ public interface ISearchService {
     Goods buildGoods(Spu spu) throws IOException;
 
     PageResult<Goods> search(SearchRequest request);
+
+    void save(Long id) throws IOException;
+
+    void delete(Long id);
 }

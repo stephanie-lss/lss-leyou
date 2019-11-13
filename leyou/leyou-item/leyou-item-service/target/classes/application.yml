@@ -10,6 +10,13 @@ spring:
     hikari:
       max-lifetime: 28830000 # 一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，参考MySQL wait_timeout参数（show variables like '%timeout%';）
       maximum-pool-size: 9
+  rabbitmq:
+    host: 192.168.31.128
+    virtual-host: /leyou
+    username: lisheng
+    password: lisheng
+    template:
+      exchange: LEYOU.ITEM.EXCHANGE
 eureka:
   client:
     service-url:

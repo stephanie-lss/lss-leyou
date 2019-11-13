@@ -8,6 +8,8 @@ import com.leyou.item.mapper.*;
 import com.leyou.item.pojo.*;
 import com.leyou.item.service.IGoodsService;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,6 +43,9 @@ public class GoodsService implements IGoodsService {
     @Autowired
     private SkuMapper skuMapper;
 
+    @Autowired
+    private AmqpTemplate amqpTemplate;
+
     @Transactional
     @Override
     public void saveGoods(SpuBo spuBo) {
@@ -57,7 +62,15 @@ public class GoodsService implements IGoodsService {
         this.spuDetailMapper.insertSelective(spuDetail);
 
         saveSkuAndStock(spuBo);
+        sendMsg("insert", spuBo.getId());
+    }
 
+    private void sendMsg(String type, Long id) {
+        try {
+            this.amqpTemplate.convertAndSend("item." + type, id);
+        } catch (AmqpException e) {
+            e.printStackTrace();
+        }
     }
 
     private void saveSkuAndStock(SpuBo spuBo) {
@@ -108,6 +121,8 @@ public class GoodsService implements IGoodsService {
         spuBo.setSaleable(null);
         this.spuMapper.updateByPrimaryKeySelective(spuBo);
         this.spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
+
+        sendMsg("update",spuBo.getId());
     }
 
     @Override

@@ -46,6 +46,14 @@ public class GoodsHtmlService {
         }
     }
     /**
+     *  删除静态html页面
+     * @param id
+     */
+    public void deleteHtml(Long id){
+        File file = new File("D:\\Java\\nginx-1.14.0\\html\\item\\" + id + ".html");
+        file.deleteOnExit();
+    }
+    /**
      * 新建线程处理页面静态化
      * @param spuId
      */

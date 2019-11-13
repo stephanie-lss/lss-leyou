@@ -5,6 +5,11 @@ spring:
     name: goods-web
   thymeleaf:
     cache: false
+  rabbitmq:
+    host: 192.168.31.128
+    virtual-host: /leyou
+    username: lisheng
+    password: lisheng
 eureka:
   client:
     service-url:

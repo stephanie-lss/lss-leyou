@@ -163,6 +163,29 @@ public class SearchService implements ISearchService {
     }
 
     /**
+     * 保存方法
+     *
+     * @param id
+     */
+    @Override
+    public void save(Long id) throws IOException {
+
+        Spu spu = this.goodsClient.querySpuById(id);
+        Goods goods = this.buildGoods(spu);
+        this.goodsRepository.save(goods);
+    }
+
+    /**
+     * 删除方法
+     *
+     * @param id
+     */
+    @Override
+    public void delete(Long id) {
+        this.goodsRepository.deleteById(id);
+    }
+
+    /**
      * 构建布尔查询
      *
      * @param request
@@ -173,7 +196,7 @@ public class SearchService implements ISearchService {
         //给布尔查询添加基本查询条件
         boolQueryBuilder.must(QueryBuilders.matchQuery("all", request.getKey()).operator(Operator.AND));
         //添加过滤条件
-        if (CollectionUtils.isEmpty(request.getFilter())){
+        if (CollectionUtils.isEmpty(request.getFilter())) {
             return boolQueryBuilder;
         }
         //获取用户选择的过滤信息
