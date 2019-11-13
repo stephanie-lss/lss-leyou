@@ -2,26 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd75ca56-d2bb-4087-96fe-a8a4bbd010ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-interface/leyou-user-interface.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/leyou-user-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/java/com/leyou/goods/service/GoodsHtmlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/java/com/leyou/goods/service/GoodsHtmlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/com/leyou/goods/service/GoodsHtmlService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/com/leyou/goods/service/GoodsHtmlService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/impl/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/impl/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/impl/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/impl/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/src/main/java/com/leyou/search/service/ISearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/src/main/java/com/leyou/search/service/ISearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/src/main/java/com/leyou/search/service/impl/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/src/main/java/com/leyou/search/service/impl/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/com/leyou/search/service/ISearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/com/leyou/search/service/ISearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/com/leyou/search/service/impl/SearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/com/leyou/search/service/impl/SearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-upload/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-upload/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-upload/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-upload/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +123,7 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="899" />
     <option name="y" value="63" />
     <option name="width" value="1021" />
@@ -212,7 +202,7 @@
     <option name="totallyTimeSpent" value="37449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="32" width="1936" height="1176" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.106303416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

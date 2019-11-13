@@ -11,6 +11,9 @@
     <file url="file://$PROJECT_DIR$/leyou-registry" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leyou-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/leyou-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leyou-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leyou-user/leyou-user-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leyou-user/leyou-user-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
