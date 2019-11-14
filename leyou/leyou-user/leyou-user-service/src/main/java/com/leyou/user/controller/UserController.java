@@ -1,5 +1,6 @@
 package com.leyou.user.controller;
 
+import com.leyou.pojo.User;
 import com.leyou.user.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import javax.validation.Valid;
 
 /**
  * @author LiSheng
@@ -22,6 +25,7 @@ public class UserController {
 
     /**
      * 用户注册校验
+     *
      * @param data
      * @param type 1表示校验用户名 2表示校验电话号码
      * @return
@@ -36,8 +40,14 @@ public class UserController {
     }
 
     @PostMapping("code")
-    public ResponseEntity<Void> sendVerifyCode(@RequestParam("phone")String phone){
+    public ResponseEntity<Void> sendVerifyCode(@RequestParam("phone") String phone) {
         this.userService.sendVerifyCode(phone);
+        return ResponseEntity.status(HttpStatus.CREATED).build();
+    }
+
+    @PostMapping("register")
+    public ResponseEntity<Void> register(@Valid User user, @RequestParam("code") String code) {
+        this.userService.register(user, code);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 }
