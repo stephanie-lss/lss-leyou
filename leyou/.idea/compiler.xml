@@ -7,15 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="leyou-item-interface" />
+        <module name="leyou-sms" />
         <module name="leyou-user-interface" />
         <module name="leyou-user-service" />
+        <module name="leyou-search" />
         <module name="leyou-gateway" />
-        <module name="leyou-item-service" />
-        <module name="leyou-common" />
+        <module name="leyou-upload" />
         <module name="leyou-goods-web" />
         <module name="leyou-registry" />
-        <module name="leyou-search" />
-        <module name="leyou-upload" />
+        <module name="leyou-item-service" />
+        <module name="leyou-common" />
       </profile>
     </annotationProcessing>
   </component>
@@ -29,6 +30,7 @@
       <module name="leyou-item-service" options="-parameters" />
       <module name="leyou-registry" options="-parameters" />
       <module name="leyou-search" options="-parameters" />
+      <module name="leyou-sms" options="-parameters" />
       <module name="leyou-upload" options="-parameters" />
       <module name="leyou-user" options="-parameters" />
       <module name="leyou-user-interface" options="-parameters" />

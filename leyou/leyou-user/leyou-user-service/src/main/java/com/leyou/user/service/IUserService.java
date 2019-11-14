@@ -6,4 +6,6 @@ package com.leyou.user.service;
  */
 public interface IUserService {
     Boolean checkUser(String data, Integer type);
+
+    void sendVerifyCode(String phone);
 }
