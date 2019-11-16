@@ -3,13 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="fd75ca56-d2bb-4087-96fe-a8a4bbd010ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-sms/leyou-sms.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/IUserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/impl/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-search/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-sms/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-sms/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-sms/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-sms/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/java/com/leyou/user/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-user/leyou-user-service/target/classes/com/leyou/user/service/impl/UserService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="114">
               <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
               <folding>
                 <element signature="e#49#193#0" />
@@ -43,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
@@ -63,10 +75,19 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="119" column="92" lean-forward="true" selection-start-line="119" selection-start-column="92" selection-end-line="119" selection-end-column="92" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/vue/vue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="76">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
@@ -81,6 +102,9 @@
       <find>allowDos</find>
       <find>img</find>
       <find>商品详情</find>
+      <find>check</find>
+      <find>获取短信</find>
+      <find>query</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,6 +117,7 @@
       <list>
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/search.html" />
+        <option value="$PROJECT_DIR$/register.html" />
       </list>
     </option>
   </component>
@@ -122,17 +147,31 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="32" />
-    <option name="width" value="1456" />
-    <option name="height" value="876" />
+    <option name="x" value="-7" />
+    <option name="y" value="40" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
@@ -191,17 +230,18 @@
       <workItem from="1573384666261" duration="2869000" />
       <workItem from="1573710318983" duration="599000" />
       <workItem from="1573731911883" duration="187000" />
+      <workItem from="1573792590893" duration="82000" />
+      <workItem from="1573793827410" duration="1823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38235000" />
+    <option name="totallyTimeSpent" value="40140000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1456" height="876" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="32" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.106303416" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.106303416" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -219,7 +259,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15332429" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.15267175" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -245,7 +285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="114">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
             <element signature="e#49#193#0" />
@@ -260,7 +300,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/vue/vue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="76">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
@@ -280,6 +320,13 @@
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="119" column="92" lean-forward="true" selection-start-line="119" selection-start-column="92" selection-end-line="119" selection-end-column="92" />
         </state>
       </provider>
     </entry>

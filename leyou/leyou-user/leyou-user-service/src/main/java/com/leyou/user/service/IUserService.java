@@ -12,4 +12,6 @@ public interface IUserService {
     void sendVerifyCode(String phone);
 
     void register(User user, String code);
+
+    User queryUser(String username, String password);
 }

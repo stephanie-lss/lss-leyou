@@ -75,18 +75,34 @@ public class UserService implements IUserService {
         //0.查询redis中的验证码
         String redisCode = this.redisTemplate.opsForValue().get(KEY_PREFIX + user.getPhone());
         //1.校验验证码
-        if (!StringUtils.equals(code,redisCode)){
+        if (!StringUtils.equals(code, redisCode)) {
             return;
         }
         //2.生成盐
         String salt = CodecUtils.generateSalt();
         user.setSalt(salt);
         //3.加盐加密
-        user.setPassword(CodecUtils.md5Hex(user.getPassword(),user.getSalt()));
+        user.setPassword(CodecUtils.md5Hex(user.getPassword(), user.getSalt()));
         //4.新增用户
         user.setId(null);
         user.setCreated(new Date());
         this.userMapper.insertSelective(user);
 //        this.redisTemplate.delete(KEY_PREFIX+user.getPhone());
+    }
+
+    @Override
+    public User queryUser(String username, String password) {
+        User record = new User();
+        record.setUsername(username);
+        User user = this.userMapper.selectOne(record);
+        if (user == null) {
+            return null;
+        }
+        // 校验密码
+        if (!user.getPassword().equals(CodecUtils.md5Hex(password, user.getSalt()))) {
+            return null;
+        }
+        // 用户名密码都正确
+        return user;
     }
 }
