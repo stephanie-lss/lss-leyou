@@ -14,6 +14,9 @@ zuul:
     item-service: /item/** #路由到商品的微服务
     search-service: /search/** #路由到商品的微服务
     user-service: /user/** #路由到用户的微服务
+    auth-service: /auth/** # 授权中心微服务
   ribbon:
     connectionTimeout: 1000 #获取链接超时时间
     readTimeout: 1000 #通讯超时时间
+  add-host-header: true
+  sensitive-headers:  #覆盖默认敏感头信息
