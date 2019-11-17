@@ -20,3 +20,15 @@ zuul:
     readTimeout: 1000 #通讯超时时间
   add-host-header: true
   sensitive-headers:  #覆盖默认敏感头信息
+leyou:
+  jwt:
+    pubKeyPath: G:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
+  filter:
+    allowPaths:
+      - /api/auth
+      - /api/search
+      - /api/user/register
+      - /api/user/check
+      - /api/user/code
+      - /api/item
