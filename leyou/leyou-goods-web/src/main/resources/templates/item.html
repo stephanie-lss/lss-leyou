@@ -221,7 +221,7 @@
                                 <ul class="btn-choose unstyled">
                                     <li>
                                         <a href="#" @click="addCart()" target="_blank"
-                                           class="sui-btn  btn-danger addshopcar">加入购物车</a>
+                                           class="sui-btn  btn-danger addshopcar">加入</a>
                                     </li>
                                 </ul>
                             </div>
@@ -674,13 +674,14 @@
         },
         methods: {
             addCart(){
-                ly.verifyUser().then(res=>{
+                //判断有没有登陆
+                ly.verify().then(res=>{
                     // 已登录发送信息到后台，保存到redis中
 
                 }).catch(()=>{
                     // 未登录保存在浏览器本地的localStorage中
                     // 1、查询本地购物车
-                    let carts = ly.store.get("carts") || [];
+                    let carts = ly.store.get("LY_CART") || [];
                     let cart = carts.find(c=>c.skuId===this.sku.id);
                     // 2、判断是否存在
                     if (cart) {
@@ -699,9 +700,9 @@
                         carts.push(cart);
                     }
                     // 把carts写回localstorage
-                    ly.store.set("carts", carts);
+                    ly.store.set("LY_CART", carts);
                     // 跳转
-                    // window.location.href = "http://www.leyou.com/cart.html";
+                    window.location.href = "http://www.leyou.com/cart.html";
                 });
             },
             plus() {
