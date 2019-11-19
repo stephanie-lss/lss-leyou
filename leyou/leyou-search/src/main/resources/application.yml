@@ -6,11 +6,11 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 192.168.190.136:9300
+      cluster-nodes: 192.168.31.128:9300
   jackson:
     default-property-inclusion: non_null
   rabbitmq:
-    host: 192.168.190.136
+    host: 192.168.31.128
     virtual-host: /leyou
     username: lisheng
     password: lisheng
