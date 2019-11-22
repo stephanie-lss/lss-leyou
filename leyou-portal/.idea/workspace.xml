@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/cart.html" line="337" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="fd75ca56-d2bb-4087-96fe-a8a4bbd010ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/templates/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/templates/item.html" afterDir="false" />
     </list>
@@ -35,20 +37,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="540" column="6" lean-forward="true" selection-start-line="540" selection-start-column="6" selection-end-line="540" selection-end-column="6" />
+            <state relative-caret-position="297">
+              <caret line="538" column="4" selection-start-line="538" selection-start-column="4" selection-end-line="538" selection-end-column="4" />
               <folding>
-                <element signature="e#49#193#0" />
-                <element signature="e#224#420#0" />
-                <element signature="e#474#553#0" />
-                <element signature="e#570#6538#0" />
-                <element signature="e#6581#7289#0" />
-                <element signature="e#6595#6916#0" />
                 <element signature="e#7610#8577#0" />
                 <element signature="e#8629#9529#0" />
                 <element signature="e#9602#10991#0" />
                 <element signature="e#11029#13033#0" />
-                <element signature="e#13079#15923#0" />
               </folding>
             </state>
           </provider>
@@ -57,11 +52,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1513">
-              <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+            <state relative-caret-position="1297">
+              <caret line="291" column="41" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="41" />
               <folding>
-                <element signature="e#2192#2198#0" expanded="true" />
-                <element signature="n#div#1;n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -106,8 +103,8 @@
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/cart.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
+        <option value="$PROJECT_DIR$/cart.html" />
       </list>
     </option>
   </component>
@@ -137,10 +134,10 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="295" />
-    <option name="y" value="208" />
-    <option name="width" value="884" />
-    <option name="height" value="752" />
+    <option name="x" value="486" />
+    <option name="y" value="78" />
+    <option name="width" value="1264" />
+    <option name="height" value="924" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -150,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +160,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,17 +226,18 @@
       <workItem from="1574080188187" duration="1590000" />
       <workItem from="1574085238746" duration="1048000" />
       <workItem from="1574165401560" duration="7714000" />
+      <workItem from="1574336781440" duration="4051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54697000" />
+    <option name="totallyTimeSpent" value="58748000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="32" width="1936" height="1176" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18462643" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27317074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -257,7 +255,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3514247" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28929606" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -338,31 +336,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="540" column="6" lean-forward="true" selection-start-line="540" selection-start-column="6" selection-end-line="540" selection-end-column="6" />
+        <state relative-caret-position="297">
+          <caret line="538" column="4" selection-start-line="538" selection-start-column="4" selection-end-line="538" selection-end-column="4" />
           <folding>
-            <element signature="e#49#193#0" />
-            <element signature="e#224#420#0" />
-            <element signature="e#474#553#0" />
-            <element signature="e#570#6538#0" />
-            <element signature="e#6581#7289#0" />
-            <element signature="e#6595#6916#0" />
             <element signature="e#7610#8577#0" />
             <element signature="e#8629#9529#0" />
             <element signature="e#9602#10991#0" />
             <element signature="e#11029#13033#0" />
-            <element signature="e#13079#15923#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1513">
-          <caret line="79" column="30" lean-forward="true" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        <state relative-caret-position="1297">
+          <caret line="291" column="41" selection-start-line="291" selection-start-column="37" selection-end-line="291" selection-end-column="41" />
           <folding>
-            <element signature="e#2192#2198#0" expanded="true" />
-            <element signature="n#div#1;n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -23,7 +23,7 @@
 
         <!--logoArea-->
         <div class="logoArea">
-            <div class="fl logo"><span class="title">购物车</span></div>
+            <a href="index.html"><div class="fl logo"><span class="title">购物车</span></div></a>
         </div>
 
         <!--All goods-->
@@ -31,7 +31,7 @@
             <h4>全部商品<span>11</span></h4>
             <div class="cart-main">
                 <div class="yui3-g cart-th">
-                    <div class="yui3-u-1-4"><input type="checkbox" v-model="check"/> 全部</div>
+                    <div class="yui3-u-1-4"><input ref="selectAllTop" type="checkbox" @click="selectAll()"/> 全部</div>
                     <div class="yui3-u-1-4">商品</div>
                     <div class="yui3-u-1-8">单价（元）</div>
                     <div class="yui3-u-1-8">数量</div>
@@ -42,39 +42,34 @@
 
                     <div class="cart-body">
                         <div class="cart-list">
-                            <ul class="goods-list yui3-g" v-for="(cart,index) in carts" :key="index">
+                            <ul class="goods-list yui3-g" v-for="(cart,i) in carts" :key="i">
                                 <li class="yui3-u-1-24">
-                                    <input type="checkbox" name="" value="cart" v-model="selected"/>
+                                    <input type="checkbox" @click="selectSingle()" v-model="selected" :value="cart" />
                                 </li>
                                 <li class="yui3-u-11-24">
                                     <div class="good-item">
-                                        <div class="item-img"><img :src="cart.image" width="80px" height="80px"/>
-                                        </div>
+                                        <div class="item-img"><img :src="cart.image" width="80px" height="80px"/></div>
                                         <div class="item-msg">
 												<span style="line-height:70px ">
-													{{cart.title}}
-                                                    <span v-for="(val,key,index) in JSON.parse(cart.ownSpec)"
-                                                          :key="index">
-                                                        {{val}}&emsp;
+													{{cart.title}}<br/>
+                                                    <span v-for="(v,k) in cart.ownSpec" :key="k">
+                                                        {{v}}
                                                     </span>
 												</span>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="yui3-u-1-8"><span style="line-height:70px " class="price">{{ly.formatPrice(cart.price)}}</span>
-                                </li>
+                                <li class="yui3-u-1-8"><span style="line-height:70px " class="price">{{ly.formatPrice(cart.price)}}</span></li>
                                 <li class="yui3-u-1-8" style="padding-top: 20px">
-                                    <a href="javascript:void(0)" class="increment mins" @click="desc(cart)">-</a>
-                                    <input autocomplete="off" type="text" v-model="cart.num" value="1" minnum="1"
-                                           class="itxt"/>
-                                    <a href="javascript:void(0)" class="increment plus" @click="asc(cart)">+</a>
+                                    <a href="javascript:void(0)" class="increment mins" @click="decrement(cart)">-</a>
+                                    <input autocomplete="off" type="text" v-model="cart.num" minnum="1" class="itxt" />
+                                    <a href="javascript:void(0)" class="increment plus" @click="increment(cart)">+</a>
                                 </li>
-                                <li class="yui3-u-1-8"><span style="line-height:70px " class="sum">{{ly.formatPrice(cart.price*cart.num)}}</span>
-                                </li>
+                                <li class="yui3-u-1-8"><span style="line-height:70px " class="sum">{{ly.formatPrice(cart.price*cart.num)}}</span></li>
                                 <li class="yui3-u-1-8">
-                                    <a href="javascript:void(0);" @click="deleteCart(index)">删除</a><br/>
-                                    <a href="javascript:void(0);">移到我的关注</a>
+                                    <a href="#none" @click="deleteCart(i)">删除</a><br />
+                                    <a href="#none">移到我的关注</a>
                                 </li>
                             </ul>
                         </div>
@@ -84,7 +79,7 @@
             </div>
             <div class="cart-tool">
                 <div class="select-all">
-                    <input type="checkbox" name="" id="" value=""/>
+                    <input type="checkbox" @click="selectAll" ref="selectAllBottom"/>
                     <span>全选</span>
                 </div>
                 <div class="option">
@@ -93,13 +88,13 @@
                     <a href="#none">清除下柜商品</a>
                 </div>
                 <div class="toolbar">
-                    <div class="chosed">已选择<span>{{total}}</span>件商品</div>
+                    <div class="chosed">已选择<span>{{totalNum}}</span>件商品</div>
                     <div class="sumprice">
-                        <span><em>总价（不含运费） ：</em><i class="summoney">{{ly.formatPrice(totalPrice)}}</i></span>
+                        <span><em>总价（不含运费） ：</em><i class="summoney">{{totalPrice}}</i></span>
                         <span><em>已节省：</em><i>-¥20.00</i></span>
                     </div>
                     <div class="sumbtn">
-                        <a class="sum-btn" href="getOrderInfo.html" target="_blank">结算</a>
+                        <a class="sum-btn"  @click.prevent="toOrderInfo"  target="_blank">结算</a>
                     </div>
                 </div>
             </div>
@@ -272,69 +267,115 @@
         el: "#cartApp",
         data: {
             ly,
-            carts: [],
-            selected: [],
-            check: true
-        },
-        create() {
-            ly.verify().then(res => {
-
-            }).catch(() => {
-                //未登录购物车的查询
-                this.carts = ly.store.get("LY_CART");
-                this.selected = this.carts;
-            })
-        },
-        watch: {
-            check(newVal) {
-                if (newVal) {
-                    this.selected = this.carts;
-                } else {
-                    this.selected = [];
-                }
-            }
-        },
-        computed: {
-            total() {
-                return this.selected.reduce((c1, c2) => c1 + c2.num, 0);
-            },
-            totalPrice() {
-                return this.selected.reduce((c1, c2) => c1 + c2.num * c2.price, 0);
-            }
-        },
-        methods: {
-            asc(cart) {
-                cart.num++;
-                ly.verify().then(res => {
-
-                }).catch(() => {
-                    //未登录购物车的查询
-                    ly.store.set("LY_CART", this.carts);
-                })
-            },
-            desc(cart) {
-                if (cart.num > 1) {
-                    cart.num--;
-                }
-                ly.verify().then(res => {
-
-                }).catch(() => {
-                    //未登录购物车的查询
-                    ly.store.set("LY_CART", this.carts);
-                })
-            },
-            deleteCart(index) {
-                ly.verify().then(res => {
-
-                }).catch(() => {
-                    //未登录购物车的查询
-                    this.carts.splice(index, 1);
-                    ly.store.set("LY_CART", this.carts);
-                })
-            },
+            carts:[], //购物车数据
+            selected:[] //记录选中的商品
         },
         components: {
             shortcut: () => import("/js/pages/shortcut.js")
+        },
+        created(){
+            this.loadCarts();
+        },
+        computed:{
+            totalPrice(){
+                return ly.formatPrice(this.selected.reduce((c1,c2) => c1+c2.num*c2.price,0))
+            },
+            totalNum(){
+                return this.selected.reduce((c1,c2) => c1+c2.num,0);
+            }
+        },
+        methods:{
+            loadCarts() {
+                //1.先判断登录状态
+                ly.verify().then(res => {
+                    //2.已经登录
+                    leyou.http.get("/cart").then(({data}) => {
+                        this.carts = data;
+                        this.carts.forEach(s => {
+                            s.ownSpec = JSON.parse(s.ownSpec);
+                        });
+                        this.selected = this.carts;
+                        this.$refs.selectAllTop.checked = true;
+                        this.$refs.selectAllBottom.checked = true;
+                    }).catch(() => {
+                        console.log("查询失败")
+                    })
+                }).catch(() => {
+                    //3.未登陆
+                    this.carts = ly.store.get("LY_CART") || [];
+                    this.carts.forEach(s => {
+                        s.ownSpec = JSON.parse(s.ownSpec);
+                    });
+                    this.selected = this.carts;
+                    this.$refs.selectAllTop.checked = true;
+                    this.$refs.selectAllBottom.checked = true;
+                })
+            },
+            increment(c){
+                c.num++;
+                ly.verify().then(() =>{
+                    //已经登录，向后台发起请求
+                    ly.http.put("/cart",ly.stringify({skuId:c.skuId,num:c.num}))
+                }).catch(() => {
+                    //未登录，直接操作本地数据库
+                    ly.store.set("carts",this.carts);
+                })
+            },
+            decrement(c){
+                if (c.num <= 1){
+                    return;
+                }
+                c.num--;
+                ly.verify().then(() =>{
+                    //已经登录，向后台发起请求
+                    ly.http.put("/cart",ly.stringify({skuId:c.skuId,num:c.num}))
+                }).catch(() => {
+                    //未登录，直接操作本地数据库
+                    ly.store.set("carts",this.carts);
+                })
+            },
+            deleteCart(i){
+                ly.verify().then(() =>{
+                    //已经登录，向后台发起请求
+                    ly.http.delete("/cart/"+this.carts[i].skuId).then(() => {
+                        this.carts.splice(i,1);
+                    });
+                    //console.log(this.carts[i].skuId)
+                }).catch(() => {
+                    //未登录，直接操作本地数据库
+                    this.carts.splice(i,1);
+                    ly.store.set("carts",this.carts);
+                })
+            },
+            selectAll(){
+                if(this.selected.length !== ly.store.get("carts").length){
+                    this.selected = this.carts;
+                }else  {
+                    this.selected = [];
+                }
+            },
+            selectSingle(){
+                if(this.selected.length !== ly.store.get("carts").length - 1){
+                    this.$refs.selectAllTop.checked=false;
+                    this.$refs.selectAllBottom.checked=false;
+                }else{
+                    this.$refs.selectAllTop.checked=true;
+                    this.$refs.selectAllBottom.checked=true;
+                }
+            },
+            toOrderInfo(){
+                //1.判断是否登录
+                ly.verify().then(() => {
+                    //2.已登录
+                    //2.1 保存已经选购的购物车记录到localStorage
+                    ly.store.set("selectedCarts",this.selected);
+                    //2.2 跳转到订单页面
+                    window.location.href = "/getOrderInfo.html";
+                }).catch(() => {
+                    //3.未登录
+                    window.location.href = "/login.html?returnUrl=" + window.location.href;
+                })
+            }
         }
     })
 </script>
