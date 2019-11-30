@@ -5,30 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd75ca56-d2bb-4087-96fe-a8a4bbd010ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/qrcode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getOrderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/pay.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paysuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/paysuccess.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/cart/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/config/LeyouWebMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/config/LeyouWebMvcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/controller/LeyouCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/src/main/java/com/leyou/cart/controller/LeyouCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/target/classes/com/leyou/cart/cart/interceptor/LoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-cart/target/classes/com/leyou/cart/config/LeyouWebMvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-cart/target/classes/com/leyou/cart/config/LeyouWebMvcConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/src/main/resources/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/templates/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-goods-web/target/classes/templates/item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/GoodsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/GoodsApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-interface/target/classes/com/leyou/item/api/GoodsApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-interface/target/classes/com/leyou/item/api/GoodsApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/IGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/IGoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/impl/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/impl/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/controller/GoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/controller/GoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/IGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/IGoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/impl/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-item/leyou-item-service/target/classes/com/leyou/item/service/impl/GoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,22 +29,75 @@
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-120">
+              <caret line="566" column="22" lean-forward="true" selection-start-line="566" selection-start-column="22" selection-end-line="566" selection-end-column="22" />
+              <folding>
+                <element signature="e#7610#8577#0" />
+                <element signature="e#8629#9529#0" />
+                <element signature="e#9602#10991#0" />
+                <element signature="e#11029#13033#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="44" column="70" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="70" />
+            <state relative-caret-position="216">
+              <caret line="272" selection-start-line="272" selection-end-line="274" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="134" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paysuccess.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/pages/shortcut.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -79,6 +117,12 @@
       <find>desc</find>
       <find>checkBox</find>
       <find>ly.store</find>
+      <find>LY_SELECTED</find>
+      <find>selectedAddress</find>
+      <find>提交订单</find>
+      <find>&quot;</find>
+      <find>top</find>
+      <find>shortcut</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,6 +138,9 @@
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/getOrderInfo.html" />
+        <option value="$PROJECT_DIR$/pay.html" />
+        <option value="$PROJECT_DIR$/paysuccess.html" />
       </list>
     </option>
   </component>
@@ -122,11 +169,11 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="680" />
-    <option name="y" value="150" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="82" />
+    <option name="y" value="64" />
     <option name="width" value="1264" />
-    <option name="height" value="923" />
+    <option name="height" value="924" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -135,14 +182,33 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../leyou" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -156,6 +222,11 @@
     <property name="project.structure.side.proportion" value="0.2720588" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Github\leyou-portal\js" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -167,6 +238,16 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="getOrderInfo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/leyou-portal/getOrderInfo.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.getOrderInfo.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -203,17 +284,18 @@
       <workItem from="1574165401560" duration="7714000" />
       <workItem from="1574336781440" duration="4051000" />
       <workItem from="1574416227979" duration="950000" />
-      <workItem from="1575087423453" duration="5190000" />
+      <workItem from="1575087423453" duration="15637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64888000" />
+    <option name="totallyTimeSpent" value="75335000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1176" extended-state="6" />
+    <frame x="82" y="64" width="1264" height="924" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27317074" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17833333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -231,7 +313,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.16586307" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21910828" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -273,13 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/pages/shortcut.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/vue/vue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -301,19 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="631" column="10" lean-forward="true" selection-start-line="631" selection-start-column="10" selection-end-line="631" selection-end-column="10" />
-          <folding>
-            <element signature="e#7610#8577#0" />
-            <element signature="e#8629#9529#0" />
-            <element signature="e#9602#10991#0" />
-            <element signature="e#11029#13033#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/axios.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -323,16 +385,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="566" column="22" lean-forward="true" selection-start-line="566" selection-start-column="22" selection-end-line="566" selection-end-column="22" />
+          <folding>
+            <element signature="e#7610#8577#0" />
+            <element signature="e#8629#9529#0" />
+            <element signature="e#9602#10991#0" />
+            <element signature="e#11029#13033#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shortcut.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="44" column="70" selection-start-line="44" selection-start-column="66" selection-end-line="44" selection-end-column="70" />
+        <state relative-caret-position="216">
+          <caret line="272" selection-start-line="272" selection-end-line="274" selection-end-column="10" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="134" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paysuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pages/shortcut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>

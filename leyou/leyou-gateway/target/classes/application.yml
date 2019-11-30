@@ -16,6 +16,7 @@ zuul:
     user-service: /user/** #路由到用户的微服务
     auth-service: /auth/** # 授权中心微服务
     cart-service: /cart/**
+    order-service: /order/**
   ribbon:
     connectionTimeout: 1000 #获取链接超时时间
     readTimeout: 1000 #通讯超时时间
@@ -34,3 +35,4 @@ leyou:
           - /api/user/code
           - /api/item
           - /api/cart
+          - /api/order
