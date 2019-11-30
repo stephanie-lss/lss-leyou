@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c699db-1c03-4913-8b7f-a0420f9680df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../leyou-portal/js/qrcode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/getOrderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/getOrderInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/pay.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/pay.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou-portal/paysuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou-portal/paysuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -207,7 +199,7 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=GB2312" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="82" />
     <option name="y" value="64" />
     <option name="width" value="1264" />
@@ -786,7 +778,7 @@
       <workItem from="1574337903150" duration="4779000" />
       <workItem from="1574416197952" duration="986000" />
       <workItem from="1575087463861" duration="10807000" />
-      <workItem from="1575098565852" duration="9035000" />
+      <workItem from="1575098565852" duration="9040000" />
     </task>
     <servers />
   </component>
@@ -823,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233223000" />
+    <option name="totallyTimeSpent" value="233228000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -835,7 +827,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="32" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49731183" weight="0.20416667" />
