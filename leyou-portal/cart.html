@@ -291,14 +291,9 @@
                     //2.已经登录
                     leyou.http.get("/cart").then(({data}) => {
                         this.carts = data;
-                        this.carts.forEach(s => {
-                            s.ownSpec = JSON.parse(s.ownSpec);
-                        });
                         this.selected = this.carts;
-                        this.$refs.selectAllTop.checked = true;
-                        this.$refs.selectAllBottom.checked = true;
                     }).catch(() => {
-                        console.log("查询失败")
+                        console.log("查询失败");
                     })
                 }).catch(() => {
                     //3.未登陆
@@ -311,24 +306,24 @@
                     this.$refs.selectAllBottom.checked = true;
                 })
             },
-            increment(c){
-                c.num++;
+            increment(cart){
+                cart.num++;
                 ly.verify().then(() =>{
                     //已经登录，向后台发起请求
-                    ly.http.put("/cart",ly.stringify({skuId:c.skuId,num:c.num}))
+                    ly.http.put("/cart",ly.stringify({skuId:cart.skuId,num:cart.num}))
                 }).catch(() => {
                     //未登录，直接操作本地数据库
                     ly.store.set("carts",this.carts);
                 })
             },
-            decrement(c){
-                if (c.num <= 1){
+            decrement(cart){
+                if (cart.num <= 1){
                     return;
                 }
-                c.num--;
+                cart.num--;
                 ly.verify().then(() =>{
                     //已经登录，向后台发起请求
-                    ly.http.put("/cart",ly.stringify({skuId:c.skuId,num:c.num}))
+                    ly.http.put("/cart",ly.stringify({skuId:cart.skuId,num:cart.num}))
                 }).catch(() => {
                     //未登录，直接操作本地数据库
                     ly.store.set("carts",this.carts);

@@ -1,4 +1,4 @@
-package com.leyou.cart.cart.interceptor;
+package com.leyou.cart.interceptor;
 
 import com.leyou.auth.pojo.UserInfo;
 import com.leyou.auth.utils.JwtUtils;

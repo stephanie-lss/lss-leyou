@@ -1,6 +1,6 @@
 package com.leyou.cart.config;
 
-import com.leyou.cart.cart.interceptor.LoginInterceptor;
+import com.leyou.cart.interceptor.LoginInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

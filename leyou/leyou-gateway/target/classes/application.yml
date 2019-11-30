@@ -27,10 +27,10 @@ leyou:
     cookieName: LY_TOKEN
   filter:
     allowPaths:
-      - /api/auth
-      - /api/search
-      - /api/user/register
-      - /api/user/check
-      - /api/user/code
-      - /api/item
-      - /api/cart
+          - /api/auth
+          - /api/search
+          - /api/user/register
+          - /api/user/check
+          - /api/user/code
+          - /api/item
+          - /api/cart

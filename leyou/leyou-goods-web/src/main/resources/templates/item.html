@@ -677,6 +677,9 @@
                 //判断有没有登陆
                 ly.verify().then(res=>{
                     // 已登录发送信息到后台，保存到redis中
+                    ly.http.post("/cart",{skuId:this.sku.id,num:this.num}).then(res=>{
+                        window.location.href = "http://www.leyou.com/cart.html";
+                    })
 
                 }).catch(()=>{
                     // 未登录保存在浏览器本地的localStorage中

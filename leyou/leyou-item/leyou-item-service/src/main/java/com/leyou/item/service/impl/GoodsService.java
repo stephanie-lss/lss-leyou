@@ -131,6 +131,11 @@ public class GoodsService implements IGoodsService {
     }
 
     @Override
+    public Sku querySkuBySkuId(Long skuId) {
+        return this.skuMapper.selectByPrimaryKey(skuId);
+    }
+
+    @Override
     public SpuDetail querySpuDetailBySpuId(Long spuId) {
         return this.spuDetailMapper.selectByPrimaryKey(spuId);
     }

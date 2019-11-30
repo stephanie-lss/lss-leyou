@@ -18,6 +18,7 @@
         <module>leyou-sms</module>
         <module>leyou-auth</module>
         <module>leyou-cart</module>
+        <module>leyou-order</module>
     </modules>
     <packaging>pom</packaging>
 
